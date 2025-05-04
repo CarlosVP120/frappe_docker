@@ -57,7 +57,7 @@ bench set-config -g redis_socketio redis://redis-queue:6379
 bench new-site --db-root-password 123 --admin-password admin development.localhost
 
 # Get and install ERPNext
-bench get-app --branch version-15 --resolve-deps erpnext
+bench get-app --branch version-15 --resolve-deps https://github.com/CarlosVP120/erpnext.git
 bench --site development.localhost install-app erpnext
 
 # Get and install Payments app
